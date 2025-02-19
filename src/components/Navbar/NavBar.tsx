@@ -15,8 +15,8 @@ const NavBar: React.FC = () => {
   }, [isDesktop]);
 
   return (
-    <div className="fixed top-10 inset-x-0 max-w-5xl mx-auto z-50">
-          <nav className="relative rounded-full border border-white shadow-input flex justify-center space-x-4 px-4 py-3 md:px-8 md:py-6 ">
+    <div className="fixed top-10 inset-x-0 max-w-6xl mx-auto z-50">
+          <nav className="relative rounded-full border border-white bg-black shadow-input flex justify-center space-x-4 px-4 py-3 md:px-8 md:py-3 ">
             <div className="flex-grow">
               <span className="text-xl">Logo</span>
             </div>

@@ -8,12 +8,12 @@ export const NavSection: React.FC = () => {
       <MenubarMenu>
         <MenubarTrigger>Solutions</MenubarTrigger>
         <MenubarContent className="bg-black text-white p-2">
-          <MenubarItem className="bg-black text-white hover:bg-gray-700 focus:bg-black focus:text-white">
+          <MenubarItem className="focus:bg-black focus:text-white">
             <ul>
               {solutionsList.map((solutions) => (
                 <li key={solutions.title}>
                   <Link to={solutions.path}>
-                    <p className="pt-1">{solutions.title}</p>
+                    <p className="pt-1 hover:text-gray-500">{solutions.title}</p>
                   </Link>
                 </li>
               ))}
@@ -25,12 +25,12 @@ export const NavSection: React.FC = () => {
       <MenubarMenu>
         <MenubarTrigger>Products</MenubarTrigger>
         <MenubarContent className="bg-black text-white p-2">
-          <MenubarItem className="bg-black text-white hover:bg-gray-700 focus:bg-black focus:text-white">
+          <MenubarItem className="focus:bg-black focus:text-white">
             <ul>
               {productsList.map((products) => (
                 <li key={products.title}>
                   <Link to={products.path}>
-                    <p className="pt-1">{products.title}</p>
+                    <p className="pt-1 hover:text-gray-500">{products.title}</p>
                   </Link>
                 </li>
               ))}
@@ -42,12 +42,12 @@ export const NavSection: React.FC = () => {
       <MenubarMenu>
         <MenubarTrigger>Company</MenubarTrigger>
         <MenubarContent className="bg-black text-white p-2">
-          <MenubarItem className="bg-black text-white hover:bg-gray-700 focus:bg-black focus:text-white">
+          <MenubarItem className="focus:bg-black focus:text-white">
             <ul>
               {companyList.map((company) => (
                 <li key={company.title}>
                   <Link to={company.path}>
-                    <p className="pt-1">{company.title}</p>
+                    <p className="pt-1 hover:text-gray-500">{company.title}</p>
                   </Link>
                 </li>
               ))}
