@@ -5,7 +5,7 @@ import CardData from "@/config/HomeCards";
 
 const HomeFeatureSection4 = () => {
   return (
-    <section className="bg-gray-100 p-16">
+    <section className="bg-gray-100 p-12">
       <Layout>
         <div className="text-center text-black">
           <div className="space-y-5">

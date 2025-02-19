@@ -3,9 +3,9 @@ import { CardIcon1, CardIcon2, CardIcon3, CardIcon4, CardIcon5, CardIcon6 } from
 const CardData = [
     {
         title: "Atlas AI Precision",
-    description: "AI-powered reports for unmatched clinical accuracy.",
-    logo: <CardIcon1 />,
-    image: "HomeCard/HomeCard1.webp",
+        description: "AI-powered reports for unmatched clinical accuracy.",
+        logo: <CardIcon1 />,
+        image: "HomeCard/HomeCard1.webp",
     },
     {
         title: "Smart Automation",
