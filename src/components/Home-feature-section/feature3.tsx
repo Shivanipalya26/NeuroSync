@@ -14,16 +14,16 @@ const HomeFeatureSection3 = () => {
 
           <div className="grid lg:grid-cols-3 gap-4 ">
             <div className="...">
-                <span className="flex text-5xl py-2">200+ { " " }</span>
-                 Customers Chose Octagos
-                </div>
-            <div className="...">
-                <span className="flex text-5xl py-2">5.5M+ { " " }</span>
-                Transmissions Processed
+              <span className="flex text-5xl py-2">200+ </span>
+              Customers Chose NeuroSync
             </div>
             <div className="...">
-                <span className="flex text-5xl py-2">300%  { " " }</span> 
-                Avg. Increase in ROI per Customer
+              <span className="flex text-5xl py-2">5.5M+ </span>
+              Transmissions Processed
+            </div>
+            <div className="...">
+              <span className="flex text-5xl py-2">300% </span>
+              Avg. Increase in ROI per Customer
             </div>
           </div>
         </div>

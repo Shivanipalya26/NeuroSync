@@ -1,14 +1,30 @@
 import Layout from "@/styles/template/Layout";
 import * as T from "../../styles/typography/index";
 import * as B from "../../styles/buttons/index";
+import { motion } from "motion/react";
+import { inPlaceFade } from "@/styles/animation";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 const HomeFeatureSection2 = () => {
+  const { ref, isInView } = useScrollAnimation();
+
+  console.log("it is working ", isInView);
+
   return (
     <section className="bg-white p-16">
       <Layout>
         <div className="text-black text-center">
-          <div className="space-y-5">
-            <T.H2 className="">Your Practice, Powered by Instant Insights</T.H2>
+          <div ref={ref} className="space-y-5">
+            <motion.div
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              variants={inPlaceFade}
+            >
+              <T.H2 className="">
+                Your Practice, Powered by Instant Insights
+              </T.H2>
+            </motion.div>
+
             <T.H6 className="text-gray-500">
               Seamless analytics for informed decisions on demand.
             </T.H6>
@@ -47,8 +63,6 @@ const HomeFeatureSection2 = () => {
               Billing Frequency
             </B.Button>
           </div>
-
-          
         </div>
       </Layout>
     </section>

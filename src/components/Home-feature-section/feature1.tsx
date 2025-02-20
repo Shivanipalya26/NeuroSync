@@ -1,19 +1,38 @@
 import Layout from "@/styles/template/Layout";
 import * as T from "../../styles/typography/index";
-import { AdventHealth, HCAHealth, CHSHealth } from "@/styles/icons/HealthPartnerIcon";
+import {
+  AdventHealth,
+  HCAHealth,
+  CHSHealth,
+} from "@/styles/icons/HealthPartnerIcon";
+import { motion } from "motion/react";
+import { slideInFromLeft } from "@/styles/animation";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
 
-const partners = [<AdventHealth />, <HCAHealth />, <AdventHealth />, <HCAHealth />, <CHSHealth />];
+const partners = [
+  <AdventHealth />,
+  <HCAHealth />,
+  <AdventHealth />,
+  <HCAHealth />,
+  <CHSHealth />,
+];
 
 const HomeFeatureSection = () => {
+  const { ref, isInView } = useScrollAnimation();
+
   return (
     <section className="bg-gray-100 p-16">
       <Layout>
         <div className="text-black">
-          <div className="pb-8">
-            <T.H2>
-              The All-in-One{" "}
-              <span className="flex flex-col">Neurology Solution</span>
-            </T.H2>
+          <div ref={ref} className="pb-8">
+            {isInView && (
+              <motion.div {...slideInFromLeft}>
+                <T.H2>
+                  The All-in-One{" "}
+                  <span className="flex flex-col">Neurology Solution</span>
+                </T.H2>
+              </motion.div>
+            )}
           </div>
           <div className="flex">
             <img
@@ -44,7 +63,7 @@ const HomeFeatureSection = () => {
               Trusted by Leaders in Remote Monitoring
             </T.H6>
           </div>
-          
+
           <div className="overflow-hidden whitespace-nowrap">
             <div className="animate-marquee flex items-center space-x-1">
               {[...partners, ...partners].map((partner, index) => (
@@ -52,7 +71,6 @@ const HomeFeatureSection = () => {
               ))}
             </div>
           </div>
-
         </div>
       </Layout>
     </section>
