@@ -1,6 +1,16 @@
-import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 import { Link } from "react-router-dom";
-import { solutionsList, productsList, companyList } from "../../config/NavBar/index";
+import {
+  solutionsList,
+  productsList,
+  companyList,
+} from "../../config/NavBar/index";
 
 export const NavSection: React.FC = () => {
   return (
@@ -13,7 +23,9 @@ export const NavSection: React.FC = () => {
               {solutionsList.map((solutions) => (
                 <li key={solutions.title}>
                   <Link to={solutions.path}>
-                    <p className="pt-1 hover:text-gray-500">{solutions.title}</p>
+                    <p className="pt-1 hover:text-gray-500">
+                      {solutions.title}
+                    </p>
                   </Link>
                 </li>
               ))}
@@ -57,21 +69,21 @@ export const NavSection: React.FC = () => {
       </MenubarMenu>
 
       <Link
-        to="/patients"
+        to="/soon"
         className=" rounded-sm px-3 py-1 text-sm font-medium focus:bg-accent focus:text-accent-foreground hover:bg-accent hover:text-accent-foreground"
       >
         Patients
       </Link>
 
       <Link
-        to="/pricings"
+        to="/soon"
         className=" rounded-sm px-3 py-1 text-sm font-medium focus:bg-accent focus:text-accent-foreground hover:bg-accent hover:text-accent-foreground"
       >
         Pricings
       </Link>
 
       <Link
-        to="/events"
+        to="/soon"
         className=" rounded-sm px-3 py-1 text-sm font-medium focus:bg-accent focus:text-accent-foreground hover:bg-accent hover:text-accent-foreground"
       >
         Events

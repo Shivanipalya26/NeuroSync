@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl pb-1 px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 rounded-lg p-4 shadow-lg sm:flex-row sm:justify-between">
           <T.H2 className="text-xl text-white sm:text-xl">
             {" "}
@@ -22,13 +22,14 @@ const Footer = () => {
           </T.H2>
 
           <div className="flex flex-col">
-            <B.Button
+            <B.LinkButton
+              to="/contact"
               rounded="full"
               className="flex items-center space-x-2 !p-4 !px-10"
             >
               <span>Book a Demo</span>
               <ArrowIcon />
-            </B.Button>
+            </B.LinkButton>
           </div>
         </div>
 
@@ -50,7 +51,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-8">
           <ul className="flex justify-center gap-6 sm:justify-end">
             <li>
               <Link
@@ -101,7 +102,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <T.P className="mt-12 text-center text-sm text-gray-500 lg:text-right">
+          <T.P className="mt-3 text-center text-sm text-gray-500 lg:text-right">
             Copyright &copy; 2025. All rights reserved.
           </T.P>
         </div>

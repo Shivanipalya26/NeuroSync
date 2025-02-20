@@ -42,29 +42,54 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
               <T.P className="max-w-xl text-lg">
-                We’re here to answer your questions and help you take the next step towards improving neuro patient care. 
-                Reach out to us anytime – we’d love to hear from you!
+                We’re here to answer your questions and help you take the next
+                step towards improving neuro patient care. Reach out to us
+                anytime – we’d love to hear from you!
               </T.P>
 
               <div className="mt-8">
-                <a href="#" className="text-2xl font-bold text-pink-600">999 999 9999</a>
-                <address className="mt-2 not-italic">282 Kevin Brook, New Delhi, India</address>
+                <a href="#" className="text-2xl font-bold text-pink-600">
+                  999 999 9999
+                </a>
+                <address className="mt-2 not-italic">
+                  282 Kevin Brook, New Delhi, India
+                </address>
               </div>
             </div>
 
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form action="#" className="space-y-4">
                 <InputField id="name" type="text" placeholder="Name" />
-                
+
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <InputField id="email" type="email" placeholder="Email address" />
-                  <InputField id="phone" type="tel" placeholder="Phone Number" />
+                  <InputField
+                    id="email"
+                    type="email"
+                    placeholder="Email address"
+                  />
+                  <InputField
+                    id="phone"
+                    type="tel"
+                    placeholder="Phone Number"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                  <RadioField id="Services" name="contact_reason" label="Services" />
-                  <RadioField id="Products" name="contact_reason" label="Product" />
-                  <RadioField id="Consultancy" name="contact_reason" label="Consultancy" />
+                  <RadioField
+                    id="Services"
+                    name="contact_reason"
+                    label="Services"
+                  />
+                  <RadioField
+                    id="Products"
+                    name="contact_reason"
+                    label="Products"
+                  />
+                  <RadioField
+                    id="Consultancy"
+                    name="contact_reason"
+                    label="Consultancy"
+                  />
                 </div>
 
                 <textarea
@@ -75,7 +100,10 @@ const Contact: React.FC = () => {
                   aria-label="Describe your problem"
                 ></textarea>
 
-                <button type="submit" className="w-full sm:w-auto rounded-lg bg-black px-5 py-3 font-medium text-white">
+                <button
+                  type="submit"
+                  className="w-full sm:w-auto rounded-lg bg-black px-5 py-3 font-medium text-white"
+                >
                   Send Enquiry
                 </button>
               </form>

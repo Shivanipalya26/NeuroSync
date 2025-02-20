@@ -58,7 +58,7 @@ const HomeFeatureSection = () => {
               </T.P>
             </div>
           </div>
-          <div className="mt-44 mb-6">
+          <div className="mt-40 mb-6">
             <T.H6 className="text-center text-slate-600 text-sm">
               Trusted by Leaders in Remote Monitoring
             </T.H6>

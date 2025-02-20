@@ -6,7 +6,7 @@ const HomeHeroSection = () => {
   return (
     <section>
       <Layout>
-        <div className="flex flex-col items-center justify-center text-center min-h-screen mt-16 xl:mt-6">
+        <div className="flex flex-col items-center justify-center text-center min-h-screen mt-16 xl:mt-6  bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]">
           <div className="">
             <T.H1 className=" font-medium ">
               The Future of Neurology Remote
@@ -15,10 +15,14 @@ const HomeHeroSection = () => {
             </T.H1>
           </div>
 
-          <div>
-            <B.Button rounded="full" className="mt-12 !p-4 !px-12 text-xl">
+          <div className="mt-14">
+            <B.LinkButton
+              to="/contact"
+              rounded="full"
+              className="!p-4 !px-12 text-xl"
+            >
               Book a Demo
-            </B.Button>
+            </B.LinkButton>
           </div>
         </div>
       </Layout>

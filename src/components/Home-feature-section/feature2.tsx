@@ -8,8 +8,6 @@ import useScrollAnimation from "@/hooks/useScrollAnimation";
 const HomeFeatureSection2 = () => {
   const { ref, isInView } = useScrollAnimation();
 
-  console.log("it is working ", isInView);
-
   return (
     <section className="bg-white p-16">
       <Layout>
@@ -30,7 +28,7 @@ const HomeFeatureSection2 = () => {
             </T.H6>
           </div>
 
-          <div className="space-x-2 p-10">
+          <div className="p-10 flex flex-col md:flex-row md:space-x-2 md:justify-center space-y-2 md:space-y-0">
             <B.Button rounded="full" className="!bg-black">
               Alert Button
             </B.Button>
