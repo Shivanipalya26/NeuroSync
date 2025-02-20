@@ -29,10 +29,10 @@ const NavBar: React.FC = () => {
         </div>
 
         <div className="hidden md:flex space-x-2">
-          <B.Button variant="secondary" rounded="full">
+          <B.LinkButton to="/login" variant="secondary" rounded="full">
             Log In
-          </B.Button>
-          <B.Button rounded="full">Book a Demo</B.Button>
+          </B.LinkButton>
+          <B.LinkButton to="/contact" rounded="full">Book a Demo</B.LinkButton>
         </div>
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </nav>
